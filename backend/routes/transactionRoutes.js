@@ -10,7 +10,7 @@ const {
 
 const router = express.Router();
 
-router.use(protect); // Available to both admin and user
+router.use(protect); 
 
 router.get('/availability', checkAvailability);
 router.post('/issue', issueMedia);

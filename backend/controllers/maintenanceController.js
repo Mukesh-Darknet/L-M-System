@@ -29,14 +29,14 @@ const addMembership = async (req, res) => {
 const updateMembership = async (req, res) => {
     try {
         const { memberId } = req.params;
-        const { action } = req.body; // 'extend' or 'cancel'
+        const { action } = req.body; 
 
         const membership = await Membership.findOne({ memberId });
         if (!membership) return res.status(404).json({ message: 'Membership not found' });
 
         if (action === 'extend') {
             const d = new Date(membership.endDate);
-            // Default 6 months extension
+           
             membership.endDate = new Date(d.setMonth(d.getMonth() + 6));
             membership.status = 'active';
         } else if (action === 'cancel') {
@@ -60,7 +60,7 @@ const getMembership = async (req, res) => {
     }
 };
 
-// Media (Books/Movies)
+// Media 
 const addMedia = async (req, res) => {
     try {
         const { type, title, authorOrDirector, serialNo } = req.body;

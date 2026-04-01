@@ -35,9 +35,7 @@ const Layout = () => {
                     </Link>
                 </nav>
                 <div className="topbar-actions">
-                    <div className="user-info" style={{ marginRight: '20px' }}>
-                        Hi, <strong>{user?.name}</strong> (<span style={{ textTransform: 'capitalize', color: 'var(--primary)' }}>{user?.role}</span>)
-                    </div>
+                    
                     <button className="btn btn-danger" style={{ padding: '8px 16px', fontSize: '14px' }} onClick={handleLogout}>
                         Logout
                     </button>

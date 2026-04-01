@@ -15,7 +15,7 @@ const membershipSchema = new mongoose.Schema({
         required: true
     },
     duration: {
-        type: Number, // in months: 6, 12, 24
+        type: Number, 
         required: true,
         default: 6
     },

@@ -3,7 +3,7 @@ const Media = require('../models/Media');
 
 const checkAvailability = async (req, res) => {
     try {
-        const { query } = req.query; // Search text for title
+        const { query } = req.query; 
         if (!query) return res.status(400).json({ message: 'Search query required' });
 
         const media = await Media.find({

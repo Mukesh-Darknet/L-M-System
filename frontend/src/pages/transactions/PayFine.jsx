@@ -38,7 +38,7 @@ const PayFine = ({ prefillData }) => {
         return (
             <div>
                 <h2>Fine Payment</h2>
-                <p>No active return session detected. Please return a book first to calculate fines.</p>
+                <p>No active return session detected. Please return a book</p>
                 {message && <p style={{ color: 'var(--success)', marginTop: '15px' }}>{message}</p>}
             </div>
         );
@@ -52,7 +52,7 @@ const PayFine = ({ prefillData }) => {
 
             <div style={{ maxWidth: '500px', background: '#f8f9fa', padding: '20px', borderRadius: '8px', marginTop: '20px' }}>
                 <div className="form-group">
-                    <label>Book/Movie Name</label>
+                    <label>Books Name</label>
                     <input type="text" className="form-control" value={transaction.mediaId?.title || 'Unknown'} readOnly disabled />
                 </div>
                 <div className="form-group">

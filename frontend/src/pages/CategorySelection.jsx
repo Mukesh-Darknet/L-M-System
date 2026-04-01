@@ -5,8 +5,7 @@ const CategorySelection = () => {
     const navigate = useNavigate();
 
     const handleSelect = (category) => {
-        // We could store it in context, but purely navigational 
-        // to Dashboard right now based on requirements
+      
         localStorage.setItem('selectedCategory', category);
         navigate('/dashboard');
     };
@@ -20,7 +19,7 @@ const CategorySelection = () => {
                     style={{ border: '2px solid var(--primary)', borderRadius: '12px' }}
                     onClick={() => handleSelect('books')}
                 >
-                    <h3>📚 Books</h3>
+                    <h3>Books</h3>
                     <p style={{ marginTop: '10px', color: 'var(--text-light)' }}>Manage Library Books</p>
                 </div>
                 <div
@@ -28,8 +27,8 @@ const CategorySelection = () => {
                     style={{ border: '2px solid var(--secondary)', borderRadius: '12px' }}
                     onClick={() => handleSelect('movies')}
                 >
-                    <h3>🎬 Movies</h3>
-                    <p style={{ marginTop: '10px', color: 'var(--text-light)' }}>Manage Library Movies</p>
+                    <h3> Movies</h3>
+                    <p style={{ marginTop: '10px', color: 'var(--text-light)' }}>Manage Library </p>
                 </div>
             </div>
         </div>

@@ -5,9 +5,13 @@ const LoginSelection = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="centered-page">
+        <div className="centered-page bg-red">
+           
+
             <div className="login-card fade-in" style={{ textAlign: 'center', padding: '50px 40px' }}>
-                <h1 style={{ marginBottom: '40px', color: 'var(--primary)' }}>Select Portal</h1>
+                <h1>Library Management System</h1>
+
+
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                     <button
                         className="btn"

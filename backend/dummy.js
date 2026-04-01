@@ -22,7 +22,7 @@ const seedAdmin = async () => {
             role: 'admin'
         });
 
-        console.log('Admin user seeded successfully. Username: admin, Password: admin123');
+        console.log('Admin user login successfully. Username: admin, Password: admin123');
         process.exit(0);
     } catch (error) {
         console.error(error);

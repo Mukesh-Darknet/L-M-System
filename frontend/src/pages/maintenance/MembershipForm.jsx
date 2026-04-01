@@ -97,7 +97,7 @@ const MembershipForm = () => {
                         <label>Duration</label>
                         <select className="form-control" value={duration} onChange={e => setDuration(e.target.value)}>
                             <option value="6">6 Months</option>
-                            <option value="12">1 Year</option>
+                            <option value="12">1 Yearr</option>
                             <option value="24">2 Years</option>
                         </select>
                     </div>

@@ -33,7 +33,7 @@ const Reports = () => {
     const renderTable = () => {
         if (loading) return <p>Loading...</p>;
         if (error) return <p className="error-text">{error}</p>;
-        if (data.length === 0) return <p>No records found.</p>;
+        if (data.length === 0) return <p>No Records found</p>;
 
         if (activeTab === 'memberships') {
             return (

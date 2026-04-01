@@ -22,7 +22,7 @@ const getMemberships = async (req, res) => {
 
 const getMediaMasterList = async (req, res) => {
     try {
-        const { type } = req.query; // 'book' or 'movie'
+        const { type } = req.query; 
         const filter = type ? { type } : {};
         const media = await Media.find(filter);
         res.json(media);
